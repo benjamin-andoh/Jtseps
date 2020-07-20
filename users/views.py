@@ -3,7 +3,8 @@ from django.shortcuts import render, redirect
 from users.forms import UserRegistrationForm
 from .forms import UserUpdateForm, ProfileUpdateForm
 
-def register(request):
+
+def register_page(request):
     form = UserRegistrationForm()
 
     if request.method == 'POST':
@@ -28,11 +29,9 @@ def profile(request):
         if p_form.is_valid() and u_form.is_valid():
             u_form.save()
             p_form.save()
-            messages.success(request, 'account has been create for update successfully' )
-            return redirect('profile')
+            messages.success(request, 'account has been create for update successfully')
+            return redirect('users:profile')
     context = {
         'u_form': u_form, 'p_form': p_form
     }
     return render(request, 'profile.html', context)
-
-

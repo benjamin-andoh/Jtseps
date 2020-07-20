@@ -37,7 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     'home.apps.HomeConfig',
-    'phonenumber_field',
+    # 'phonenumber_field',
     'users.apps.UsersConfig',
     'crispy_forms',
 
@@ -152,7 +152,7 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
 
 # after using the login page
-LOGIN_REDIRECT_URL = 'application:home'
+LOGIN_REDIRECT_URL = '/'
 
 # for the login required
 # after using the profile page

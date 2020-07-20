@@ -18,7 +18,7 @@ class UserUpdateForm(forms.ModelForm):
         fields = ['username', 'email']
 
 
-#  branch, image, role
+# branch, image, role
 class ProfileUpdateForm(forms.ModelForm):
     class Meta:
         model = Profile
