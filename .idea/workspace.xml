@@ -34,22 +34,23 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="full.screen.before.presentation.mode" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/media/profile_pics" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\andoh\PycharmProjects\Jsteps\users\templates" />
-      <recent name="$PROJECT_DIR$/application/static" />
-      <recent name="$PROJECT_DIR$/static" />
-      <recent name="$PROJECT_DIR$/jstep_env/project1/application/templates" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\USER\PycharmProjects\Jtseps\media" />
+      <recent name="C:\Users\USER\PycharmProjects\Jtseps\media\profile_pics" />
       <recent name="C:\Users\andoh\PycharmProjects\Jsteps\application\templates\base" />
       <recent name="C:\Users\andoh\PycharmProjects\Jsteps\home\templates\home" />
       <recent name="C:\Users\andoh\PycharmProjects\Jsteps\users\templates" />
-      <recent name="C:\Users\andoh\PycharmProjects\Jsteps\application" />
-      <recent name="C:\Users\andoh\PycharmProjects\Jsteps" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\USER\PycharmProjects\Jtseps\media\profile_pics" />
+      <recent name="C:\Users\USER\PycharmProjects\Jtseps\media" />
+      <recent name="C:\Users\andoh\PycharmProjects\Jsteps\users\templates" />
+      <recent name="$PROJECT_DIR$/application/static" />
+      <recent name="$PROJECT_DIR$/static" />
     </key>
   </component>
   <component name="RunManager">
