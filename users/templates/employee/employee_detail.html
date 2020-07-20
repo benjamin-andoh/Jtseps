@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+<!--employee_id, first_name, last_name, other_names, date_of_birth, phone,
+email, picture, role, branch-->
+{% block content %}
+
+
+<div class="card" style="width: 18rem;">
+  <img class="card-img-top" src="..." alt="Card image cap">
+
+    <div class="card-body">
+    <h5 class="card-title"> {{ e.first_name }} {{ object.other_names}} {{ e.last_name}} </h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+  </div>
+
+
+    <ul class="list-group list-group-flush">
+    <li class="list-group-item">{{ e.phone}}  </li>
+    <li class="list-group-item">{{ e.email}} </li>
+    <li class="list-group-item">{{ e.role}} </li>
+  </ul>
+
+    <div class="card-body">
+    <a href="#" class="card-link">facebook</a>
+    <a href="#" class="card-link">linkedIn</a>
+  </div>
+</div>
+
+{% endblock %}
+
+
+
