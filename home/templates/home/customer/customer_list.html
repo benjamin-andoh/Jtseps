@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<h1> list of customers </h1>
+
+<div class="form-group">
+        <button class="btn btn-outline-info" type="submit">
+            <a href="{% url 'home:customer-create' %}">create new </a>
+        </button>
+    </div>
+
+<div >
+{% for customer in customers %}
+   <p> {{ customer.first_name }}</p>
+    <p>{{ customer.last_name }}</p>
+    <p> {{ customer.other_name }}</p>
+
+{% endfor %}
+    </div>
+<div class="form-group">
+        <button class="btn btn-outline-info" type="submit">
+            <a href="#">detail</a>
+        </button>
+    <button class="btn btn-outline-info" type="submit">
+            <a href="#">update</a>
+        </button>
+    </div>
+</body>
+</html>
