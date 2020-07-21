@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<h1>  customers details </h1>
+    <p>First name : {{ customer.first_name }} </p>
+    <p>Last name : {{ customer.last_name }}</p>
+    <p> Other names : {{ customer.other_names }}</p>
+    <p> Next of Kin : {{ next_of_kin.first_name}}</p>
+    <button class="btn btn-outline-info" type="submit">
+        <a href="{% url 'home:customer-list' %}">back of list </a>
+    </button>
+</body>

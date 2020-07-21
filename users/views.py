@@ -1,5 +1,6 @@
 from django.contrib import messages
 from django.contrib.auth import authenticate, login, logout
+from django.contrib.auth.models import User
 from django.shortcuts import render, redirect
 from users.forms import UserRegistrationForm
 from .forms import UserUpdateForm, ProfileUpdateForm
@@ -56,3 +57,7 @@ def profile(request):
     }
     return render(request, 'profile.html', context)
 
+
+def list_employee(request):
+    users = User.objects.all()
+    return render(request, 'employee/employee_list.html', {'users': users})

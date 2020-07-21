@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>list of customers </title>
 </head>
 <body>
 
@@ -16,19 +16,19 @@
 
 <div >
 {% for customer in customers %}
-   <p> {{ customer.first_name }}</p>
-    <p>{{ customer.last_name }}</p>
-    <p> {{ customer.other_name }}</p>
+    <p>First name : {{ customer.first_name }} </p>
+    <p>Last name : {{ customer.last_name }}</p>
+    <p> Other names : {{ customer.other_names }}</p>
+    <button class="btn btn-outline-info" type="submit">
+        <a href="{% url 'home:customer-detail' customer.id %}">detail</a>
+    </button>
+    <button class="btn btn-outline-info" type="submit">
+        <a href="#">update</a>
+    </button>
+<hr>
 
 {% endfor %}
     </div>
-<div class="form-group">
-        <button class="btn btn-outline-info" type="submit">
-            <a href="#">detail</a>
-        </button>
-    <button class="btn btn-outline-info" type="submit">
-            <a href="#">update</a>
-        </button>
-    </div>
+
 </body>
 </html>

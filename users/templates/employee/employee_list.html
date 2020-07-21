@@ -1,15 +1,18 @@
-{% extends 'base/base.html' %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>list of customers </title>
+</head>
+<body>
 
-{% block content %}
-
- <h1> Employee List </h1>
+<h1> list of customers </h1>
 
 <div>
 <table class="table table-hover table-dark">
   <thead>
     <tr>
-      <th>Details </th>
-      <th>Employee ID</th>
+
       <th>First Name</th>
       <th>Last Name</th>
       <th>Other Names</th>
@@ -19,11 +22,10 @@
       <th>Branch</th>
     </tr>
   </thead>
-  {% for e in employee %}
+  {% for e in users %}
   <tbody>
     <tr>
-      <td><a class="btn btn-primary" href="{% url 'application:employeedetail' e.employee_id %}" role="button">Link</a></td>
-      <td>{{ e.employee_id }}</td>
+
       <td>{{ e.first_name }}</td>
       <td>{{ e.last_name }}</td>
       <td>{{ e.other_names }}</td>
@@ -37,6 +39,6 @@
   {% endfor %}
 </table>
 
-    <a class="btn btn-primary" href="{% url 'application:createemployee'  %}" role="button"> Create New Employee </a>
  </div>
-        {% endblock %}
+
+</body>
