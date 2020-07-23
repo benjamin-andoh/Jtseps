@@ -10,7 +10,17 @@
     <p>First name : {{ customer.first_name }} </p>
     <p>Last name : {{ customer.last_name }}</p>
     <p> Other names : {{ customer.other_names }}</p>
-    <p> Next of Kin : {{ next_of_kin.first_name}}</p>
+
+<br>
+   <h3>  Account Info </h3>
+    <p> Account Number: </p>
+    <p> Account name: </p>
+    <p> Branch: </p>
+
+<br>
+    <h3> Next of kin Details </h3>
+    <p> first name : {{ next_of_kin.first_name}}</p>
+    <p> last name : {{ next_of_kin.last_name}}</p>
     <button class="btn btn-outline-info" type="submit">
         <a href="{% url 'home:customer-list' %}">back of list </a>
     </button>

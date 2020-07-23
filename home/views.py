@@ -28,5 +28,12 @@ class CustomerDetailView(DetailView):
 
     def get_queryset(self):
         customer = Customer.objects.all()
-        # next_of_kin = Next_of_kin.objects.all()
+        # next_of_kin = Next_of_o.objects.all()
         return customer
+
+
+class Next_of_kinListView(ListView):
+    model = Customer
+    template_name = 'home/customer/next_of_kin.html'
+    context_object_name = 'nok'
+    ordering = ['-dated_registered']

@@ -25,6 +25,9 @@
     <button class="btn btn-outline-info" type="submit">
         <a href="#">update</a>
     </button>
+     <button class="btn btn-outline-info" type="submit">
+        <a href="{% url 'home:next-of-kin' customer.id %}">check next of kin</a>
+    </button>
 <hr>
 
 {% endfor %}
